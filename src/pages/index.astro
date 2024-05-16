@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Build from '../components/Build.vue';
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="h-full w-full">
+        <div class="bg-blue-500 flex flex-col items-center justify-center">
+            <Build client:load/>
+        </div>
+    </div>
+</Layout>
